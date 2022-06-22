@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts
+  script(scr='/static/index.js')
+  
+
+block style
+  style 
+    include ../static/services.css
+    
+
+block content 
+  nav#navbar 
+    ul 
+      #logo 
+        img(src="/static/logo-new.png", alt="Dance Logo")
+        | DDA 
+      li #[a(href="/") Home]
+      li #[a(href="/aboutus") About Us]
+      li #[a(href="#" class="active") Services]
+      li #[a(href="/classes") Classes]
+      li #[a(href="/contact") Contact us]  
+  
+  .servicesbg
+    .services_container 
+      | <h1 data-aos="flip-left">Our Services</h1>
+    section#Services 
+      .services 
+        .servicesimg 
+          img(src="/static/ballet.jfif", alt="Ballet")
+        .services_content
+          h1 Ballet
+          p Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form in France and Russia. It has since become a widespread and highly technical form of dance with its own vocabulary.
+
+    section#Services 
+      .services 
+        .services_content
+          h1 Classical
+          p Indian classical dance is an umbrella term for various performance arts rooted in musical theatre styles, whose theory and practice can be traced to the Sanskrit text, Natyashastra. The number of classical dances range from eight to more, depending on the source and scholar. 
+        .servicesimg 
+          img(src="/static/classical.jfif", alt="Classical")
+
+    section#Services 
+      .services
+        .servicesimg 
+          img(src="/static/poledance.jpg", alt="Pole Dance")
+        .services_content
+          h1 Pole Dance
+          p Pole dance combines dance and acrobatics centered on a vertical pole. This performance art form takes place not only in gentleman's clubs as erotic dance, but also as a mainstream form of fitness, practiced in gyms and dedicated dance studios.
+
+    section#Services 
+      .services 
+        .services_content
+          h1 Hip-hop
+          p Hip hop dance is a range of street dance styles primarily performed to hip hop music or that have evolved as part of hip hop culture. It is influenced by a wide range of styles that were created in the 1970s and made popular by dance crews in the United States. 
+        .servicesimg 
+          img(src="/static/hiphop.jfif", alt="Hip-Pop")

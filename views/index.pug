@@ -1,0 +1,68 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy
+    style
+      include ../static/style.css
+  body
+    #bg  
+      nav#navbar
+        ul
+          #logo 
+            img(src="/static/logo-new.png")
+          #dda 
+            |DDA
+        .mininav 
+          li #[a(href="#" class="active") Home]
+          li #[a(href="/aboutus") About Us] 
+          li #[a(href="/services") Services]
+          li #[a(href="/classes") Classes] 
+          li #[a(href="/contact") Contact Us] 
+
+      section#introSection 
+        div  Welcome to Deep's Dance Academy 
+        div.small   Dance is an art that imprints on the soul. It is with you every moment. It expresses itself in everything you do.
+        div.small   -Shirley MacLaine
+ 
+    section#missionSection 
+        h2 Our Mission
+        .card
+          h3  Dance Perfection
+          .card-box 
+            .card-img 
+              img(src="/static/d1.png")
+
+            .card-content 
+              p This is the best Dance Academy  
+
+        .card
+          h3  Dance your Heart-out
+          .card-box 
+            .card-img 
+              img(src="/static/d2.png")
+
+            .card-content 
+              p This is the best Dance Academy  
+
+        .card
+          h3  Professional Teaching
+          .card-box 
+            .card-img 
+              img(src="/static/d3.png")
+
+            .card-content 
+              p This is the best Dance Academy  
+
+    section#sponsorsSection 
+        h2 Our Sponsors
+        #sponsors 
+          img(src="/static/skype.png", alt="Sponsor Image", Class="spImage")
+          img(src="/static/hike.png", alt="Sponsor Image", Class="spImage")
+          img(src="/static/az.png", alt="Sponsor Image", Class="spImage")
+          img(src="/static/hp.png", alt="Sponsor Image", Class="spImage")
+    
+    footer#footer 
+        | Copyright Ⓒ 2021 DeepDanceAcademy.com | All rights reserved.
+    script
+      include ../static/index.js

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Baloo+Bhai+2:wght@800&family=Bebas+Neue&family=Comforter+Brush&family=Concert+One&family=Dangrek&family=Lakki+Reddy&family=Luckiest+Guy&family=Roboto+Slab:wght@900&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One', cursive;
+}
+
+#navbar{
+    display: flex;
+    background-color:rgba(0, 0, 0);
+    font-family: 'Yeon Sung';
+    padding: 13px, 14px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 40px;
+}
+
+#navbar li a{ 
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+  letter-spacing: 1px;
+}
+
+#navbar li a:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 4px rgb(249 141 7);  
+}
+
+.active{
+    box-shadow: inset 0px 0px 0px 4px rgb(249 141 7);
+}
+
+#logo{
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    margin: 0 14px;
+    font-size: 28px;
+    margin-right: 40px;
+}
+
+#logo img{
+    height: 72px;
+}
+
+
+h1{
+    color: rgb(0, 0, 0);
+    padding: 18px;
+}
+
+#myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+}
+
+.myInput{
+    width: 40%;
+    padding: 3px;
+    margin: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btn{
+    background-color: #060607eb;
+    color: white;
+    width: 70px;
+    height: 25px;
+    margin: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.container{
+    background: url('/static/contactbg2.jpg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 655px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.minicontainer{
+    background-color: #fa9b0b94;
+    width: 40%;
+    margin: 0px 120PX;
+    margin-top: -80PX;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer */
+#footer{
+    background-color: black;
+    color: white;
+    /* display: flex;
+    justify-content: center;*/
+    text-align: center; 
+    font-size: 15px;
+    padding: 7px;
+    height: 330px;
+}
+
+.updated_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 277px;
+}
+
+.updated_footer section.c1{
+    width: 33.33%;
+    text-align: initial;
+}
+
+.updated_footer section.c1 p{
+    text-align: justify;
+}
+
+.updated_footer section.c2{
+    width: 33.33%;
+}
+
+.updated_footer section.c3{
+    width: 33.33%;
+    align-items: center;
+}
+
+.updated_footer section.c3 h4{
+    padding: 40px 104px;
+    font-size: 20px;
+    display: flex;
+}
+
+.footer_logo{
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer_logo img{
+    height: 100px;
+}
+
+.footer_logo span{
+    font-size: 25px;
+}
+
+.opening_hours h4{
+    font-size: 20px;
+    display: flex;
+    padding: 8px 136px;
+}
+
+.opening_hours ul{
+    padding: 20px 135px;
+    list-style: none;
+    text-align: initial;
+}
+
+.opening_hours ul li{
+    padding: 10px 0px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons .i img{
+    height: 35px;
+    padding: 0 20px;
+}
+
+.icons .i img:hover{
+    cursor: pointer;
+    box-shadow: inset 3px 0px 0px 0px rgb(249 141 7);
+}
+
+.icons .i a{
+    color: black;
+}
+
+.copyryt{
+    padding: 10px;
+}

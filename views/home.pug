@@ -1,0 +1,32 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content
+  #bg  
+    nav#navbar
+      ul
+        #logo 
+          img(src="/static/logo-new.png")
+        #dda 
+          |DDA
+      .mininav 
+        li #[a(href="#" class="active") Home]
+        li #[a(href="/aboutus") About Us] 
+        li #[a(href="/services") Services]
+        li #[a(href="/classes") Classes] 
+        li #[a(href="/contact") Contact Us] 
+
+    section#introSection 
+        div  Welcome to Deep's Dance Academy 
+        div.small   Dance is an art that imprints on the soul. It is with you every moment. It expresses itself in everything you do.
+        div.small   -Shirley MacLaine
+      
+      
+    
+    

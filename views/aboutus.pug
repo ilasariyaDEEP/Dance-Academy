@@ -1,0 +1,94 @@
+extends base.pug
+
+block scripts
+  script(scr='/static/index.js')
+
+block style
+  style 
+    include ../static/aboutus.css
+
+block content 
+  nav#navbar 
+    ul 
+      #logo 
+        img(src="/static/logo-new.png", alt="Dance Logo")
+        | DDA 
+      li #[a(href="/") Home]
+      li #[a(href="#" class="active") About Us]
+      li #[a(href="/services") Services]
+      li #[a(href="/classes") Classes]
+      li #[a(href="/contact") Contact us]
+  
+  .aboutusbg
+    .aboutus_container 
+      section#brief
+        h1 About US 
+        
+      section#Services 
+      .services 
+        .servicesimg 
+          img(src="/static/bg.jpg", alt="Dance Img")
+        .services_content
+          h1 DDA
+          p We are widely-acknowledged as the most popular and reputed dance organisation. Together with our Master Instructers, they make up the DDL brand, which fosters creative excellence in the talented, enthusiastic dancer, raising the standards of dance in India and beyond. Learn about our various courses both online and in the studio and pick the perfect course for you.
+          .sps 
+            .students 
+              p 180
+              h4 Students
+            .practice_hours 
+              p 1520
+              h4 Practice Hours
+            .students 
+              p 520
+              h4 Classes
+
+  section#InstructersSection 
+    h2 Meet Our Instructers
+    section#instructers
+      .card
+        .card_box
+          .card_img 
+            img(src="/static/inst.jfif", alt="Instructer")
+          
+        .card_content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis, quia esse provident saepe dolore neque nemo odit eligendi soluta aliquam quos inventore nesciunt doloribus accusamus deleniti voluptate perferendis optio.
+          h3 
+            | Deep Ilasariya
+          h4 
+            | Ballet
+
+      .card
+        .card_box
+          .card_img 
+            img(src="/static/inst.jfif", alt="Instructer")
+          
+        .card_content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis, quia esse provident saepe dolore neque nemo odit eligendi soluta aliquam quos inventore nesciunt doloribus accusamus deleniti voluptate perferendis optio.
+          h3 
+            | Deep Ilasariya
+          h4 
+            | Classical
+
+      .card
+        .card_box
+          .card_img 
+            img(src="/static/inst.jfif", alt="Instructer")
+          
+        .card_content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis, quia esse provident saepe dolore neque nemo odit eligendi soluta aliquam quos inventore nesciunt doloribus accusamus deleniti voluptate perferendis optio.
+          h3 
+            | Deep Ilasariya
+          h4 
+            | Pole Dance
+
+      .card
+        .card_box
+          .card_img 
+            img(src="/static/inst.jfif", alt="Instructer")
+          
+        .card_content
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis, quia esse provident saepe dolore neque nemo odit eligendi soluta aliquam quos inventore nesciunt doloribus accusamus deleniti voluptate perferendis optio.
+          h3 
+            | Deep Ilasariya
+          h4 
+            | Hip-Hop            

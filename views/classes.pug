@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts
+  script(scr='/static/index.js')
+
+block style
+  style 
+    include ../static/contact.css
+
+block content 
+  nav#navbar 
+    ul 
+      #logo 
+        img(src="/static/logo-new.png", alt="Dance Logo")
+        | DDA 
+      li #[a(href="/") Home]
+      li #[a(href="/aboutus") About Us]
+      li #[a(href="/services") Services]
+      li #[a(href="#" class="active") Classes]
+      li #[a(href="/contact") Contact us]

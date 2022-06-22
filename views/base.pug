@@ -1,0 +1,50 @@
+doctype html 
+html
+  head
+    title Dance Academy 
+    block scripts
+      //- script(scr='/static/aos.js')
+      //- script(scr='/static/aos_manual.js')
+    block style 
+      //- include ../static/aos.css
+  body
+    block content
+    footer#footer
+      footer.updated_footer 
+        section.c1
+          .footer_logo 
+            img(src="/static/logo-new.png", alt="logo") 
+            span
+              | Dance 
+          p The ART of Dance is a performing art form. It transmits culture, emotions, tells stories and can be a testimony of a historical moment or a place of origin. ... Dance is also a form of art that often calls on others to support its intention, be it music, stage decor, costume and more.
+        section.c2
+          .opening_hours 
+            h4 Opening Hours
+            ul 
+              li
+                | Ballet Dance: 07:00 - 21:00
+              li 
+                | Classical Dance: 09:00 - 17:00
+              li 
+                | Pole Dance: 10:00 - 20:00
+              li 
+                | Hip-Hop: 08:30 - 18:30
+        section.c3 
+          h4 Follow us on
+          .icons 
+            .i 
+              a(href='https://www.facebook.com/' target='_blank') 
+                img(src="/static/fb.png", alt="Facebook")
+
+              a(href='https://www.instagram.com/' target='_blank') 
+                img(src="/static/insta.png", alt="Instragram")
+            
+              a(href='https://www.youtube.com/' target='_blank') 
+                img(src="/static/yt.png", alt="Youtube")
+            
+              a(href='https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D' target='_blank') 
+                img(src="/static/twt.png", alt="Twitter")
+
+      hr
+      .copyryt 
+        | Copyright Ⓒ 2021 DeepDanceAcademy.com | All rights reserved.  

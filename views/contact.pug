@@ -1,0 +1,32 @@
+extends base.pug
+
+block scripts
+  script(scr='/static/index.js')
+
+block style
+  style 
+    include ../static/contact.css
+
+block content 
+  nav#navbar 
+    ul 
+      #logo 
+        img(src="/static/logo-new.png", alt="Dance Logo")
+        | DDA 
+      li #[a(href="/") Home]
+      li #[a(href="/aboutus") About Us]
+      li #[a(href="/services") Services]
+      li #[a(href="/classes") Classes]
+      li #[a(href="#" class="active") Contact us]
+  
+  .container
+    .minicontainer  
+      h1 Contact Us 
+      form#myForm(action="/contact", method="post") 
+        input(type="text", class="myInput", name="name", placeholder="Enter your Name")
+        input(type="phone", class="myInput", name="phone", placeholder="Enter your Phone-No")
+        input(type="email", class="myInput", name="email", placeholder="Enter your Email-Id")
+        input(type="text", class="myInput", name="address", placeholder="Enter your Address")
+        input(type="text", class="myInput", name="desc", placeholder="Enter your Concern")
+        button.btn 
+          |Submit
